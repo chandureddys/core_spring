@@ -9,8 +9,8 @@ public class Test {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 		Student student= (Student) context.getBean("student");
 		 
-		System.out.println("Employee ID: " + student.getId());
-		System.out.println("Employee Name: " + student.getName());
+		System.out.println("Student ID: " + student.getId());
+		System.out.println("Student Name: " + student.getName());
 	}
 
 }
