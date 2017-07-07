@@ -11,10 +11,8 @@
    <bean name="score" class="com.core.spring.spring_core.Scores" p:maths="100" p:physics="80" p:chemistry="60">
    </bean>
    
-   <bean name="pupil" class="com.core.spring.spring_core.Pupil">
-   <property name="score">
-     <ref bean="score" />
-   </property>
+   <bean name="pupil" class="com.core.spring.spring_core.Pupil" p:score-ref="score">
+   
    </bean>
    
    </beans>
