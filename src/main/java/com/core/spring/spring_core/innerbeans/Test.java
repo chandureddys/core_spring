@@ -9,7 +9,9 @@ public class Test {
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/core/spring/spring_core/innerbeans/config.xml");
 		Student student= (Student) context.getBean("student");
-		System.out.println(student);
+		System.out.println(student.hashCode());
+		Student student1= (Student) context.getBean("student");
+		System.out.println(student1.hashCode());
 	}
 
 }
