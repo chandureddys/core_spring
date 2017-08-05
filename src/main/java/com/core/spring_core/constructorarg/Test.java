@@ -9,6 +9,7 @@ public class Test {
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/core/spring_core/constructorarg/config.xml");
 		Student student= (Student) context.getBean("student");
+		//Print student object
 		System.out.println(student);
 		
 	}
